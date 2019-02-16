@@ -1,5 +1,6 @@
 import discord
 import asyncio
+import os
 
 client = discord.Client()
 
@@ -40,4 +41,6 @@ async def on_message(message):
         await client.send_message(message.channel, "천재")
     if "집한봇 456" == message.content:
         await client.send_message(message.channel, "789")
-client.run('NTEyNTkwODY0OTA4OTQzMzYw.Dweo-g.rtmJ57uCcRS41C0DZRzsYPU5QNk')
+        
+access_token = os.environ["BOT_TOKEN"]
+client.run('access_token')
