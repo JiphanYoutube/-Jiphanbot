@@ -38,22 +38,6 @@ async def on_message(message):
         await client.send_message(message.channel, "천재")
     if "집한봇 집한은?" == message.content:
         await client.send_message(message.channel, "천재")
-    if "집한봇 필라초이" == message.content:
-        await client.send_message(message.channel, "만능 스트리머")
-    if "집한봇 필라초이는" == message.content:
-        await client.send_message(message.channel, "만능 스트리머")
-    if "집한봇 필라초이는?" == message.content:
-        await client.send_message(message.channel, "만능 스트리머")
-    if message.content.startswith('신청'):
-        msg = '{0.author.mention}'.format(message) + '님이 신청하셨습니다.'
-        user = await client.get_user_info(345874764885262336)
-        await client.send_message(user, msg)
-        await client.send_message(message.channel, embed=discord.Embed(title="신청이 정상적으로 완료가 되었습니다.", color=0x00ffbb))
-    if message.content.startswith('명령어건의'):
-        msg = '{0.author.mention}'.format(message) + '님이 명령어 건의를 하셨습니다.\n\n집한봇 사용 디스코드\n필라초이 , BOT TEST'
-        user = await client.get_user_info(271806318430519297)
-        await client.send_message(user, msg)
-        await client.send_message(message.channel, embed=discord.Embed(title="명령어 건의가 정상적으로 완료가 되었습니다.", color=0x00ffbb))
     if "집한봇 456" == message.content:
         await client.send_message(message.channel, "789")
 client.run('NTEyNTkwODY0OTA4OTQzMzYw.Dweo-g.rtmJ57uCcRS41C0DZRzsYPU5QNk')
